@@ -60,9 +60,13 @@ input:focus{
 
 .btn-on:hover {
 	float: left;
-	border-color: green;
+	border-color: transparent !important;
 }
 
+.btn-off:hover {
+	float: right;
+	border-color: transparent !important;
+}
 
 .logo-position {
 	font-family: 'Rock Salt', cursive;
