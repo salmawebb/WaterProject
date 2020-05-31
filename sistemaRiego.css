@@ -11,9 +11,6 @@ input:focus{
   border-bottom-color: #a9a9a9;
 }
 
-
-
-
 .text-style{
 	font-family: 'Rock Salt', cursive;
 }
@@ -75,7 +72,7 @@ input:focus{
 		top:20%;
 		left:50%;
 		/*determinamos una anchura*/
-		width:400px;
+		width:500px;
 		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
 		margin-left:-200px;
 		/*determinamos una altura*/
@@ -97,7 +94,7 @@ input:focus{
 .position{
 		text-align: center;
         font-family: 'Rock Salt', cursive;
-        color: white;
+        color: black;
         width: 100%;
         bottom: 0;
         position:fixed;
