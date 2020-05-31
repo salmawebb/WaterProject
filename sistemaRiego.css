@@ -1,0 +1,101 @@
+input{
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-bottom: 2px solid white;
+  transition: all 0.5x;
+}
+
+input:focus{
+  border-bottom-color: #a9a9a9;
+}
+
+
+
+
+.text-style{
+	font-family: 'Rock Salt', cursive;
+}
+
+.background-image{
+	background-image: url("https://www.coolgarden.me/wp-content/uploads/2018/04/How-to-Water-Your-Garden-Adequately-in-10-Easy-Steps-Without-Waste-FB.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+
+.cuadrado {
+	font-family: 'Rock Salt', cursive;
+		 position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:50%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:1000px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-200px;
+		/*determinamos una altura*/
+		height:300px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+		margin-top:-150px;
+		/*border:1px solid #808080;*/
+		padding:5px;
+		/*background-color: #77A585;*/
+		background-color: none;
+		color: white;
+}
+
+.btn-off{
+	float: right;
+	/*background-color: var(--button-background-color);important!*/
+	 border-color: white !important;
+	 color: white !important;
+}
+
+.btn-on{
+	float: left;
+	border-color: white !important;
+	color: white !important;
+}
+
+.btn-on:hover {
+	float: left;
+	border-color: green;
+}
+
+
+.logo-position {
+	font-family: 'Rock Salt', cursive;
+		 position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:20%;
+		left:50%;
+		/*determinamos una anchura*/
+		width:400px;
+		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
+		margin-left:-200px;
+		/*determinamos una altura*/
+		height:300px;
+		/*indicamos que el margen superior, es la mitad de la altura*/
+		margin-top:-150px;
+		/*border:1px solid #808080;*/
+		padding:5px;
+		/*background-color: #77A585;*/
+		background-color: none;
+}
+
+.color-background{
+	 background: rgba(119,165,133,.7);
+}
+
+
+
+.position{
+		text-align: center;
+        font-family: 'Rock Salt', cursive;
+        color: white;
+        width: 100%;
+        bottom: 0;
+        position:fixed;
+        /*background-color: #77A585;*/
+}
