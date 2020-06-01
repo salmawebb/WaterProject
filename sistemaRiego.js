@@ -15,12 +15,22 @@ function switchOff()
 //poner el tiempo
 function setTimer()
 {
-	var timer=document.getElementById("timer").value;
 	
-	console.log(timer);
+		var combo2 = document.getElementById("minutos");
+		var selected2 = combo2.options[combo2.selectedIndex].text;
 
+		if (selected2 != 0) {
+			console.log(selected2);	
+		}
 
+		var combo = document.getElementById("hora");
+		var selected = combo.options[combo.selectedIndex].text;
 
+		if (selected != 0) {
+			console.log(selected);	
+		}
+
+		
 
 		
 }
