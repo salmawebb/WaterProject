@@ -13,7 +13,15 @@ function switchOff()
 }  
 
 //poner el tiempo
-function switchTimer()
+function setTimer()
 {
-	}
+	var timer=document.getElementById("timer").value;
+	
+	console.log(timer);
+
+
+
+
+		
+}
 	

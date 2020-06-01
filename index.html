@@ -43,27 +43,36 @@ function switchTimer()
 
 	
 
-<div class="logo-position text-center" style="width: 20rem;">
-  <div class="card-body">
+<div class="postion-logo" style="width: 25rem;">
+  <div class="card-body center-block">
      <img src="./losinfondo.png" class="card-img" alt="...">
   </div>
 </div>
 
-<div class="color-background cuadrado text-center" style="width: 20rem;">
-  <div class="card-body ">
-    <h5 class="card-title">Sistema de Riego</h5>
-    <input class="btn btn-outline-success btn-rounded btn-lg  btn-on one-third first button" type="button" onClick="switchOn()" value="Open"/>
-	<input class="btn btn-outline-danger btn-rounded btn-lg btn-off one-third first button" type="button" onClick="switchOff()" value="Close"/>
-	<div>
-	<h5 class="card-title">Timer:</h5>
-	<div class="md-form">
-     <input type="text" id="form1" >
-  	
-</div>
-</div>
-  </div>
+
+<div class="container color-background" >
+      <div class="row">
+        <div class="">
+        	 <h5 class="text-style">Sistema de Riego</h5>
+    		 <input class="btn btn-outline-success btn-lg  btn-on   " type="button" onClick="switchOn()" value="Open"/>
+			 <input class="btn btn-outline-danger btn-lg btn-off  " type="button" onClick="switchOff()" value="Close"/>
+			 <br><br><br>
+			 <div class="center">
+			 <h5 class="text-style">Timer:</h5>
+			 <label id="timerbyuser"></label>			 
+			 <input type="number" id="hora" name="quantity" min="0" max="24"> hora(s)
+			 <input type="number" id="minutos" name="quantity" min="0" max="59"> minutos 
+			 <button style="margin: 10px" class="btn btn-outline-primary btn-rounded btn-lg btn-ok" onclick="setTimer()">ok</button>
+			 </div>		
+ 		</div>
+	</div>
 </div>
 
+<!--<div class="color-background cuadrado text-center " style="width: 20rem;">
+  <div class="card-body  ">
+    
+	</div>
+  </div>-->
 
 <div class="card-body position">
     <h5 class="card-title">Team Workers</h5>

@@ -5,14 +5,23 @@ input{
   padding: 10px;
   border-bottom: 2px solid white;
   transition: all 0.5x;
+  font-size: 14px;
 }
 
 input:focus{
   border-bottom-color: #a9a9a9;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .text-style{
 	font-family: 'Rock Salt', cursive;
+	text-align:center;
 }
 
 .background-image{
@@ -42,54 +51,75 @@ input:focus{
 		color: white;
 }
 
-.btn-off{
-	float: right;
-	/*background-color: var(--button-background-color);important!*/
+.btn-ok{
+	
 	 border-color: white !important;
 	 color: white !important;
+	 
+	 
+}
+
+.btn-ok:hover {
+
+	border-color: transparent !important;
+	
+}
+
+.btn-off{
+	float: right;
+	 border-color: white !important;
+	 color: white !important;
+	 padding: 6px 40px !important;
+	 width:45% !important;
 }
 
 .btn-on{
 	float: left;
 	border-color: white !important;
 	color: white !important;
+	padding: 6px 40px !important;
+	width:45% !important;
 }
 
 .btn-on:hover {
 	float: left;
 	border-color: transparent !important;
+	padding: 6px 40px !important;
 }
 
 .btn-off:hover {
 	float: right;
 	border-color: transparent !important;
+	padding: 6px 40px !important;
 }
 
 .logo-position {
 	font-family: 'Rock Salt', cursive;
-		 position: absolute;
-		/*nos posicionamos en el centro del navegador*/
-		top:20%;
-		left:50%;
-		/*determinamos una anchura*/
-		width:500px;
-		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
-		margin-left:-200px;
-		/*determinamos una altura*/
-		height:300px;
-		/*indicamos que el margen superior, es la mitad de la altura*/
-		margin-top:-150px;
-		/*border:1px solid #808080;*/
-		padding:5px;
-		/*background-color: #77A585;*/
-		background-color: none;
+	display: flex;
+    justify-content: center;
+    align-items: center;        /* for single line flex container */
+    align-content: center;    
 }
 
 .color-background{
 	 background: rgba(119,165,133,.7);
+	 width: 100%;
 }
 
+.center { float: none; margin-left: auto; margin-right: auto; }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;        /* for single line flex container */
+    align-content: center;      /* for multi-line flex container */
+}
+
+.position-logo{
+	width: 100%;
+        top: 0;
+        position:fixed;
+}
 
 .position{
 		text-align: center;
