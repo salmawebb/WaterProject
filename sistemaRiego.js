@@ -4,12 +4,12 @@ var url = "https://api.particle.io/v1/devices/" + deviceID + "/dispensador";
 
 function switchOn()
 {
-	$.post(url, {params: "Open", access_token: accessToken });
+	$.post(url, {params: "Regar", access_token: accessToken });
 }  
 
 function switchOff()
 {
-	$.post(url, {params: "Close", access_token: accessToken });
+	$.post(url, {params: "Noregar", access_token: accessToken });
 }  
 
 //poner el tiempo
@@ -17,8 +17,8 @@ function setTimer()
 {
 	
 		var combo2 = document.getElementById("minutos");
-		var selected2 = combo2.options[combo2.selectedIndex].text;
-
+		 var selected2 = combo2.options[combo2(selectedIndex)].value;
+		 console.log(selected2);	
 		if (selected2 != 0) {
 			console.log(selected2);	
 		}
