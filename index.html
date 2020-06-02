@@ -1,19 +1,27 @@
 <html>
 <head >
-<link type="text/css" href="./sistemaRiego.css" rel="stylesheet">
-<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
+	<link type="text/css" href="./sistemaRiego.css" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<link href="https://fonts.googleapis.com/css?family=Rock+Salt&display=swap" rel="stylesheet">
 
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<!-- animsition.css -->
+	<link rel="stylesheet" href="../dist/css/animsition.min.css">
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<!-- animsition.js -->
+	<script src="../dist/js/animsition.min.js"></script>
+
 
 <!-- <script>
 var accessToken = "4d0fc494bd7211e80d7f7cf68b68125422667e10";
@@ -37,55 +45,61 @@ function switchTimer()
 }
 
 </script> -->
+
+<title>Water Control</title>
 </head>	
 
-<body class="background-image">
+<body class="background-image animsition">
 
 	
 
-<div class="postion-logo" style="width: 25rem;">
-  <div class="card-body center-block">
-     <img src="./losinfondo.png" class="card-img" alt="...">
-  </div>
-</div>
-
-
-<div class="container color-background" >
-      <div class="row">
-        <div class="">
-        	 <h5 class="text-style">Sistema de Riego</h5>
-    		 <input class="btn btn-outline-success btn-lg  btn-on   " type="button" onClick="switchOn()" value="Open"/>
-			 <input class="btn btn-outline-danger btn-lg btn-off  " type="button" onClick="switchOff()" value="Close"/>
-			 <br><br><br>
-			 <div class="center">
-			 <h5 class="text-style">Timer:</h5>
-			 <label id="timerbyuser"></label>			 
-			 <input type="number" id="hora" name="quantity" min="0" max="24"> hora(s)
-			 <input type="number" id="minutos" name="quantity" min="0" max="59"> minutos 
-			 <button style="margin: 10px" class="btn btn-outline-primary btn-rounded btn-lg btn-ok" onclick="setTimer()">ok</button>
-			 </div>		
- 		</div>
+	<div class="postion-logo" style="width: 15rem; padding-bottom: 10% ">
+		<div class="card-body center-block">
+			<img src="./losinfondo.png" class="card-img" alt="...">
+		</div>
 	</div>
-</div>
 
-<!--<div class="color-background cuadrado text-center " style="width: 20rem;">
-  <div class="card-body  ">
-    
+
+	
+	<div class="container text-style color-background">
+		<div class="">
+			<h5 class="">Sistema de Riego</h5>
+			<input class="btn btn-outline-success btn-lg  btn-on   " type="button" onClick="switchOn()" value="Open"/>
+			<input class="btn btn-outline-danger btn-lg btn-off  " type="button" onClick="switchOff()" value="Close"/>
+			<br><br><br>
+			
+
+			<div class="">
+				<h5 class="">Timer:</h5>
+				<label id="timerbyuser"></label>			 
+				<input type="number" id="hora" name="quantity" min="0" max="24"> hora(s)
+				<input type="number" id="minutos" name="quantity" min="0" max="59"> minutos 
+				<button style="margin: 10px" class="btn btn-outline-primary btn-rounded btn-lg btn-ok" onclick="setTimer()">ok</button>
+			</div>
+		</div>	
+		<div class=" right">
+			<a href="./graphics.html">
+				<svg class="bi bi-chevron-compact-right" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg"> 
+					<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"p/> 
+					
+				</svg>
+				</a>
+			</div>	
 	</div>
-  </div>-->
-
-<div class="card-body position">
-    <h5 class="card-title">Team Workers</h5>
-    <p class="card-text">Marcela Kineret Rivera Santibanez | Salma Webb Gonzalez</p> 
-    
-</div> 
-  
-  
 
 
-<script src="https://code.jquery.com/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="sistemaRiego.js"></script>
+	<div class="card-body position">
+		<h5 class="card-title">Team Workers</h5>
+		<p class="card-text">Marcela Kineret Rivera Santibanez | Salma Webb Gonzalez</p> 
+
+	</div> 
+
+
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="sistemaRiego.js"></script>
 </body>
 </html>
 

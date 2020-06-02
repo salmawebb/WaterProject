@@ -12,16 +12,37 @@ input:focus{
   border-bottom-color: #a9a9a9;
 }
 
+@media all and (max-width: 600px){
+
+.right{
+  
+  margin: 10px;
+margin-left:auto; 
+margin-right:0;
+float: right;
+}
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    min-width: 100%;
+    color: white;
 }
 
 .text-style{
 	font-family: 'Rock Salt', cursive;
 	text-align:center;
+
+}
+
+@media  (max-width: 600px){
+	.arrowSize{
+		width="1em";
+		height="1em";
+	}
+
 }
 
 .background-image{
@@ -30,33 +51,12 @@ input:focus{
 	background-size: cover;
 }
 
-.cuadrado {
-	font-family: 'Rock Salt', cursive;
-		 position: absolute;
-		/*nos posicionamos en el centro del navegador*/
-		top:50%;
-		left:50%;
-		/*determinamos una anchura*/
-		width:1000px;
-		/*indicamos que el margen izquierdo, es la mitad de la anchura*/
-		margin-left:-200px;
-		/*determinamos una altura*/
-		height:300px;
-		/*indicamos que el margen superior, es la mitad de la altura*/
-		margin-top:-150px;
-		/*border:1px solid #808080;*/
-		padding:5px;
-		/*background-color: #77A585;*/
-		background-color: none;
-		color: white;
-}
+
 
 .btn-ok{
 	
 	 border-color: white !important;
-	 color: white !important;
-	 
-	 
+	 color: white !important;	 
 }
 
 .btn-ok:hover {
@@ -103,10 +103,10 @@ input:focus{
 
 .color-background{
 	 background: rgba(119,165,133,.7);
-	 width: 100%;
+	 width: 100% !important;
 }
 
-.center { float: none; margin-left: auto; margin-right: auto; }
+.center { float: none; margin-left: auto; margin-right: 0px; }
 
 .center {
     display: flex;
@@ -117,16 +117,88 @@ input:focus{
 
 .position-logo{
 	width: 100%;
-        top: 0;
-        position:fixed;
+    top: 0;
+    position:fixed;
+    float: center;
 }
 
 .position{
 		text-align: center;
         font-family: 'Rock Salt', cursive;
-        color: black;
+       
         width: 100%;
         bottom: 0;
-        position:fixed;
-        /*background-color: #77A585;*/
+       position: absolute;
+        
 }
+
+@media  (max-width: 600px){
+.position{
+		text-align: center;
+        font-family: 'Rock Salt', cursive;
+       font-size: 12px;
+        width: 100%;
+        bottom: 0;
+       position: absolute;
+    } 
+    #hora {
+    	font-size: 5px;
+    }
+
+    #minutos {
+    	font-size: 5px;
+    }
+
+}
+
+@keyframes fade-in-left {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.fade-in-left {
+  animation-name: fade-in-left;
+}
+
+
+@keyframes fade-out-left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+}
+
+
+.fade-out-left {
+  animation-name: fade-out-left;
+}
+
+.animsition,
+.animsition-overlay {
+  position: relative;
+  opacity: 0;
+  animation-fill-mode: both;
+}
+
+/**
+ * overlay option
+ */
+.animsition-overlay-slide {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: #ddd;
+}
+
