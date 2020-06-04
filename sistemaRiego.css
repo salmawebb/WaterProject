@@ -21,6 +21,7 @@ select{
 	border-bottom: 2px solid white;
 	transition: all 0.5x;
 	font-size: 14px;
+	color: white;
 }
 
 
@@ -172,14 +173,23 @@ align-content: center;      /* for multi-line flex container
 	float: center;
 }
 
-/*.position{
+.position-card{
 	text-align: center;
-    font-family: 'Rock Salt', cursive;
-   
+    font-family: 'Rock Salt', cursive;  
     width: 100%;
     bottom: 0;
-   position: absolute;
+    position: relative;
     
+}
+
+.card{
+	text-align: center;
+    font-family: 'Rock Salt', cursive;  
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    background-color: #77A585 !important;
+
 }
 
 @media only screen and  (max-width: 600px){
@@ -189,9 +199,9 @@ align-content: center;      /* for multi-line flex container
    font-size: 12%;
     width: 100%;
     bottom: 0;
-   position: absolute;
+   position: relative;
 } 
-}*/
+}
 
 
 
