@@ -3,6 +3,8 @@ var deviceID = "390063001851373237343331"
 var url = "https://api.particle.io/v1/devices/" + deviceID + "/riego";
 var urls = "https://api.particle.io/v1/devices/" + deviceID + "/riegos";
 var urlh = "https://api.particle.io/v1/devices/" + deviceID + "/horas";
+var urlsp = "https://api.particle.io/v1/devices/" + deviceID + "/minparar";
+var urlhp = "https://api.particle.io/v1/devices/" + deviceID + "/horasparar";
 
 function switchOn()
 {
@@ -33,9 +35,35 @@ function setTimer()
 		}	
 		
 		console.log(selected);	
-		console.log(selectedmin);	
+		console.log(selectedmin);
+
 		$.post(urlh, {params: selected , access_token: accessToken });	
 		$.post(urls, {params: selectedmin , access_token: accessToken });
+
+
+     var comboparah = document.getElementById("horasParar");
+    var selectedHorasParar = comboparah.options[comboparah.selectedIndex].text;
+
+    if (selectedHorasParar != 0) {
+      //var numeric = parseInt(selectedh);
+      $.post(urlhp, {params: selectedHorasParar , access_token: accessToken }); 
+      
+      
+    }
+
+    var comboMinutosParar = document.getElementById("minutosParar");
+    var selectedminParar = comboMinutosParar.options[comboMinutosParar.selectedIndex].text;
+
+    if (selectedminParar != 0) {
+      var numericmin = parseInt(selected); 
+       $.post(urlsp, {params: selectedminParar , access_token: accessToken }); 
+    } 
+    console.log(selectedHorasParar);  
+    console.log(selectedminParar);
+
+     
+   
+
 }
 
 //animation
