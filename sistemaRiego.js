@@ -1,6 +1,8 @@
 var accessToken = "4d0fc494bd7211e80d7f7cf68b68125422667e10";
 var deviceID = "390063001851373237343331"
 var url = "https://api.particle.io/v1/devices/" + deviceID + "/riego";
+var urls = "https://api.particle.io/v1/devices/" + deviceID + "/riegos";
+var urlh = "https://api.particle.io/v1/devices/" + deviceID + "/horas";
 
 function switchOn()
 {
@@ -19,19 +21,21 @@ function setTimer()
 		var selected = combo.options[combo.selectedIndex].text;
 
 		if (selected != 0) {
-			console.log(selected);	
+			var numeric = parseInt(selected);
+			
+			
 		}
-
-
-		$.post(url, {params: selected, access_token: accessToken });
-
 		var comboMinutos = document.getElementById("minutos");
 		var selectedmin = comboMinutos.options[comboMinutos.selectedIndex].text;
 
 		if (selectedmin != 0) {
-			console.log(selectedmin);	
-			$.post(url, {params: (selected, selectedmin), access_token: accessToken });
-		}		
+			var numericmin = parseInt(selected);	
+		}	
+		
+		console.log(selected);	
+		console.log(selectedmin);	
+		$.post(urlh, {params: selected , access_token: accessToken });	
+		$.post(urls, {params: selectedmin , access_token: accessToken });
 }
 
 //animation
