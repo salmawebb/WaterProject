@@ -1,56 +1,102 @@
 input{
-  background-color: transparent;
-  outline: none;
-  border: none;
-  padding: 10px;
-  border-bottom: 2px solid white;
-  transition: all 0.5x;
-  font-size: 14px;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-bottom: 2px solid white;
+	transition: all 0.5x;
+	font-size: 10px;
 }
 
 input:focus{
-  border-bottom-color: #a9a9a9;
+	border-bottom-color: #a9a9a9;
 }
 
 
-.dropdown{
+select{
 	background-color: transparent;
-  outline: none;
-  border: none;
-  padding: 10px;
-  border-bottom: 2px solid white;
-  transition: all 0.5x;
-  font-size: 14px;
+	outline: none;
+	border: none;
+	padding: 10px;
+	border-bottom: 2px solid white;
+	transition: all 0.5x;
+	font-size: 14px;
 }
-@media all and (max-width: 600px max-height: 500px){
 
-.right{
-  
-  margin: 10px;
-margin-left:auto; 
-margin-right:0;
-float: right;
-}
+
+@media all and (max-width: 600px max-height: 500px){
+	.right{
+
+		margin: 10px;
+		margin-left:auto; 
+		margin-right:0;
+		float: right;
+	}
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 100%;
-    color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-width: 100%;
+	color: white;
 }
 
 .text-style{
 	font-family: 'Rock Salt', cursive;
 	text-align:center;
-
 }
 
-@media only screen and (max-width: 600px){
+.color-background{
+	background: rgba(119,165,133,0.7);
+	width: 100% !important;
+}
+
+@media only screen and (max-width: 600px ){
 	.arrowSize{
 		width="1em";
 		height="1em";
+	}
+
+	.btn-ok{
+		font-size: 100% !important;
+		border-color: white !important;
+		color: white !important;	 
+	}
+
+	.btn-ok:hover {
+		border-color: transparent !important;
+	}
+
+	.btn-off{
+		float: right;
+		border-color: white !important;
+		color: white !important;
+		font-size: 100% !important;
+	}
+
+	.btn-on{
+		float: left;
+		border-color: white !important;
+		color: white !important;
+		font-size: 100% !important;
+		/*padding: 6px 20px !important;*/
+	}
+
+	.btn-on:hover {
+		float: left;
+		border-color: transparent !important;
+		
+	}
+
+	.btn-off:hover {
+		float: right;
+		border-color: transparent !important;
+		
+	}
+
+	.fontsize{
+	font-size: 10px !important;
 	}
 
 }
@@ -64,151 +110,144 @@ float: right;
 
 
 .btn-ok{
-	
-	 border-color: white !important;
-	 color: white !important;	 
+
+	border-color: white !important;
+	color: white !important;	 
 }
 
 .btn-ok:hover {
 
 	border-color: transparent !important;
-	
+
 }
 
 .btn-off{
 	float: right;
-	 border-color: white !important;
-	 color: white !important;
-	 padding: 6px 40px !important;
-	 width:45% !important;
+	border-color: white !important;
+	color: white !important;
+	
+	
 }
 
 .btn-on{
 	float: left;
 	border-color: white !important;
 	color: white !important;
-	padding: 6px 40px !important;
-	width:45% !important;
-}
+	
 
 .btn-on:hover {
 	float: left;
 	border-color: transparent !important;
-	padding: 6px 40px !important;
-}
+	
 
 .btn-off:hover {
 	float: right;
 	border-color: transparent !important;
-	padding: 6px 40px !important;
+	
 }
 
 .logo-position {
 	font-family: 'Rock Salt', cursive;
 	display: flex;
-    justify-content: center;
-    align-items: center;        /* for single line flex container */
-    align-content: center;    
+	justify-content: center;
+	align-items: center;        /* for single line flex container */
+	align-content: center;    
 }
 
-.color-background{
-	 background: rgba(119,165,133,.7);
-	 width: 100% !important;
-}
 
-.center { float: none; margin-left: auto; margin-right: 0px; }
+
+/* .center { float: none; margin-left: auto; margin-right: 0px; }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;        /* for single line flex container */
-    align-content: center;      /* for multi-line flex container */
-}
+display: flex;
+justify-content: center;
+align-items: center;        for single line flex container 
+align-content: center;      /* for multi-line flex container 
+} */
 
 .position-logo{
 	width: 100%;
-    top: 0;
-    position:fixed;
-    float: center;
+	top: 0;
+	position:fixed;
+	float: center;
 }
 
-.position{
-		text-align: center;
-        font-family: 'Rock Salt', cursive;
-       
-        width: 100%;
-        bottom: 0;
-       position: absolute;
-        
+/*.position{
+	text-align: center;
+    font-family: 'Rock Salt', cursive;
+   
+    width: 100%;
+    bottom: 0;
+   position: absolute;
+    
 }
 
 @media only screen and  (max-width: 600px){
 .position{
-		text-align: center;
-        font-family: 'Rock Salt', cursive;
-       font-size: 12%;
-        width: 100%;
-        bottom: 0;
-       position: absolute;
-    } 
-    #hora {
-    	font-size: 5px;
-    }
+	text-align: center;
+    font-family: 'Rock Salt', cursive;
+   font-size: 12%;
+    width: 100%;
+    bottom: 0;
+   position: absolute;
+} 
+}*/
 
-    #minutos {
-    	font-size: 5px;
-    }
 
-}
+
+
+
+
+
 
 @keyframes fade-in-left {
-  0% {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+	0% {
+		transform: translateX(-500px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
 }
 
 
 .fade-in-left {
-  animation-name: fade-in-left;
+	animation-name: fade-in-left;
 }
 
 
 @keyframes fade-out-left {
-  0% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translateX(-500px);
-    opacity: 0;
-  }
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-500px);
+		opacity: 0;
+	}
 }
 
 
 .fade-out-left {
-  animation-name: fade-out-left;
+	animation-name: fade-out-left;
 }
 
 .animsition,
 .animsition-overlay {
-  position: relative;
-  opacity: 0;
-  animation-fill-mode: both;
+	position: relative;
+	opacity: 0;
+	animation-fill-mode: both;
 }
 
 /**
- * overlay option
- */
+* overlay option
+*/
 .animsition-overlay-slide {
-  position: fixed;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: #ddd;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: #ddd;
 }
 
