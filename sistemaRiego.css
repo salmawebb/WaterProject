@@ -174,8 +174,8 @@ align-content: center;      /* for multi-line flex container
 }
 
 .position-card{
-	text-align: center;
-    font-family: 'Rock Salt', cursive;  
+	text-align: center !important;
+    font-family: 'Rock Salt', cursive !important;  
     width: 100%;
     bottom: 0;
     position: relative;
@@ -193,13 +193,15 @@ align-content: center;      /* for multi-line flex container
 }
 
 @media only screen and  (max-width: 600px){
-.position{
-	text-align: center;
-    font-family: 'Rock Salt', cursive;
-   font-size: 12%;
+.position-card{
+	text-align: center !important;
+    font-family: 'Rock Salt', cursive !important;
+   	font-size: 12%;
     width: 100%;
     bottom: 0;
    position: relative;
+   background-color: #77A585 !important;
+
 } 
 }
 

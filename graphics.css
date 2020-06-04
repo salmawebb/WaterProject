@@ -5,5 +5,31 @@
 }
 
 .fondo-color{
-	background-color="#77A585";
+	background: rgba(119,165,133);
 }
+
+.temperatura{
+	float: left;
+}
+
+.text-style{
+	font-family: 'Rock Salt', cursive;
+	text-align:center;
+}
+
+.left{
+
+		margin: 10px;
+		margin-left:0; 
+		margin-right:auto;
+		float: left;
+	}
+
+	.center{
+
+		margin: 15px;
+		margin-left:auto; 
+		margin-right:auto;
+		float: center;
+		color:white;
+	}
